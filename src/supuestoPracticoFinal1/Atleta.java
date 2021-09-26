@@ -13,7 +13,19 @@ public class Atleta {
 		VELOCISTA, MEDIO_FONDO, FONDO, OTROS
 	}
 	
+	//Definimos el método constructor sin parametros.
+	Atleta(){
+		numeroFederado = 0;
+		nombreAtleta = "";
+		horasDeEntrenamiento = 0.0;
+	}
 	
-	
-	
+	//Definimos el método constructor con parámetros para tener las dos alternativas de creación del objeto.
+	Atleta(int numFed, String nombre, double horas){
+		numeroFederado = numFed;
+		nombreAtleta = nombre;
+		horasDeEntrenamiento = horas;
+		
+	}
+		
 }
